@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Old Games • Home</title>
+  <link rel="stylesheet" href="./src/main.css" />
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="row" style="gap:10px;">
+        <strong>Old Games</strong>
+        <a href="./index.html">Home</a>
+      </div>
+
+      <div class="row" id="authLinks" style="gap:10px;">
+        <a href="./login.html">Login</a>
+        <a href="./register.html">Register</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="panel">
+      <div class="row">
+        <h1 style="margin:0;">All games</h1>
+        <span id="status" class="small"></span>
+      </div>
+
+      <div class="controls">
+        <input id="search" type="search" placeholder="Search games by name..." />
+        <select id="sort">
+          <option value="name-asc">Sort: Name (A–Z)</option>
+          <option value="released-asc">Sort: Release (old → new)</option>
+          <option value="released-desc">Sort: Release (new → old)</option>
+        </select>
+      </div>
+
+      <p id="error" class="error"></p>
+      <section id="grid" class="grid"></section>
+    </div>
+  </main>
+
+  <script type="module" src="./src/pages/home.js"></script>
+</body>
+</html>

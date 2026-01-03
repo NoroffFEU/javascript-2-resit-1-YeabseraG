@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Old Games • Register</title>
+  <link rel="stylesheet" href="./src/main.css" />
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="row" style="gap:10px;">
+        <strong>Old Games</strong>
+        <a href="./index.html">Home</a>
+        <a href="./profile.html">Profile</a>
+      </div>
+      
+      <div class="row" id="authLinks" style="gap:10px;">
+        <a href="./login.html">Login</a>
+        <a href="./register.html">Register</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="panel" style="max-width:520px;margin:20px auto;">
+      <h1 style="margin-top:0;">Register</h1>
+
+      <form id="form" class="controls" style="grid-template-columns:1fr;">
+        <input id="name" required minlength="3" placeholder="Name (e.g. my_noroff_name)" />
+        <input id="email" required type="email" placeholder="Email" />
+        <input id="password" required type="password" minlength="8" placeholder="Password (min 8)" />
+        <button class="primary" id="submit" type="submit">Create account</button>
+      </form>
+
+      <p id="msg" class="small" style="margin-top:12px;"></p>
+      <p class="small">Already have an account? <a href="./login.html">Login</a></p>
+    </div>
+  </main>
+
+  <script type="module" src="./src/pages/register.js"></script>
+</body>
+</html>
