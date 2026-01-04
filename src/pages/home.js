@@ -14,7 +14,6 @@ let allGames = [];
 
 function normalizeGame(raw) {
   // API returns { data: [...] }, and each item is a game object.
-  // We'll assume the fields exist; handle missing safely.
   return {
     id: raw.id,
     name: raw.name ?? "Untitled",

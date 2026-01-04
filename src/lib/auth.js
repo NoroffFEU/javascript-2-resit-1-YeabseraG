@@ -2,8 +2,7 @@ import { fetchJson } from "./api.js";
 import { setUser } from "./user.js";
 
 /**
- * Register a new Noroff user.
- * Note: Noroff may require a @stud.noroff.no email depending on course rules.
+ * Register a new Noroff user using a @stud.noroff.no address
  */
 export async function registerUser({ name, email, password }) {
   return fetchJson("/auth/register", {

@@ -101,7 +101,7 @@ grid.addEventListener("click", (e) => {
   btn.classList.toggle("primary", nowFav);
   btn.textContent = nowFav ? "★ Favourited" : "☆ Favourite";
 
-  // If user unfavourites on profile page, remove card immediately
+  // If user unfavourites on profile page, it will remove the card immediately
   if (!nowFav) {
     btn.closest(".card")?.remove();
     const remaining = grid.querySelectorAll(".card").length;
