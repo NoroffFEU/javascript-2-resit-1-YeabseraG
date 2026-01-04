@@ -29,7 +29,7 @@ The app consumes the Noroff **Old Games API** to display games and the Noroff **
 ## Pages
 - `index.html` — Home (list all games, search, sort, favourite)
 - `game.html?id=<id>` — Game details
-- `genre.html?g=<genre>` — Games filtered by genre
+- `genre.html?g=<genre>` — Games filtered by genre (click on any genre beneath the game title on the homepage to find other games associated with that genre)
 - `register.html` — Registration page
 - `login.html` — Login page
 - `profile.html` — User profile + favourites list
