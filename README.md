@@ -40,5 +40,15 @@ Because of this, you **cannot** run it correctly by double-clicking the HTML fil
 
 You must serve it through a local web server.
 
+### Option A: VS Code Live Server (Recommended)
+1. Open the project folder in **VS Code**
+2. Install the extension **Live Server**
+3. Right-click `index.html` → **Open with Live Server**
+4. Your browser should open something like:
+   - `http://127.0.0.1:5500/index.html`
 
+### Option B: Use a simple local server
+If you have Node.js installed, you can run:
+```bash
+npx serve
 
