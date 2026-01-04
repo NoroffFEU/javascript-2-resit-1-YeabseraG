@@ -8,7 +8,7 @@ import { API_BASE } from "./constants.js";
  */
 export async function fetchJson(path, options = {}) {
   const headers = new Headers(options.headers || {});
-  // Only set JSON content-type if we're sending a body
+  // Only set JSON content-type if im sending a body
   if (options.body && !headers.has("Content-Type")) {
     headers.set("Content-Type", "application/json");
   }
